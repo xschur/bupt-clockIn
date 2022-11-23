@@ -79,7 +79,6 @@ class ClockIn:
         jsonobj = self.__get_old_info()
         if jsonobj == "":
             return ""
-        logging.info(jsonobj)
         res = self.__session.post(url=self.__upload_url, headers=self.__headers, data=jsonobj)
         return res.text
 

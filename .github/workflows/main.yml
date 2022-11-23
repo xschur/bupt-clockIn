@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '01 16 * * *'
+    - cron: '0 1 * * *'
+    - cron: '0 17 * * *'
 
 jobs:
   clockIn:
